@@ -9,4 +9,12 @@
     <string name="oque_e_sars_cov_2_titulo">Oque é SARS-CoV-2?</string>
     <string name="oque_e_sars_cov_2_text">\tCovid-19 é uma infecção respiratória aguda causada pelo coronavírus SARS-CoV-2, potencialmente grave, de elevada transmissibilidade e de distribuição global.\n\n O SARS-CoV-2 é um betacoronavírus descoberto em amostras de lavado broncoalveolar obtidas de pacientes com pneumonia de causa desconhecida na cidade de Wuhan, província de Hubei, China, em dezembro de 2019. Pertence ao subgênero Sarbecovírus da família Coronaviridae e é o sétimo coronavírus conhecido a infectar seres humanos.\n\n Os coronavírus são uma grande família de vírus comuns em muitas espécies diferentes de animais, incluindo o homem, camelos, gado, gatos e morcegos. Raramente os coronavírus de animais podem infectar pessoas e depois se espalhar entre seres humanos como já ocorreu com o MERS-CoV e o SARS-CoV-2. Até o momento, não foi definido o reservatório silvestre do SARS-CoV-2.</string>
     <string name="oque_e_sars_cov_2_fonte">https://www.gov.br/saude/pt-br/coronavirus/o-que-e-o-coronavirus</string>
+    <string name="menu_card_view_virus_text">O que é a SARS-Cov-2</string>
+    <string name="menu_text_card_view_tips">Dicas de Prevenção</string>
+    <string name="menu_text_card_view_about_vaccine">Sobre a Vacina</string>
+    <string name="menu_text_card_view_statistics">Estatísticas do Covid-19</string>
+    <string name="ic_menu_card_view_virus_description">Ícone de Virus.</string>
+    <string name="ic_menu_card_view_prevention_tips_description">Ícone de Livro.</string>
+    <string name="ic_menu_card_view_about_vaccine_description">Ícone de Seringa.</string>
+    <string name="ic_menu_card_view_statistics_description">Ícone de Gráfico em Barra.</string>
 </resources>

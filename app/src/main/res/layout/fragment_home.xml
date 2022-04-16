@@ -5,99 +5,130 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment"
-    android:padding="10dp">
+    android:padding="@dimen/menu_padding">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/menu_card_view_virus"
-        android:layout_width="@dimen/menu_card_view_size"
-        android:layout_height="@dimen/menu_card_view_size"
+    <GridLayout
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:cardCornerRadius="10dp"
-        app:strokeColor="@color/black"
-        app:strokeWidth="1dp">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp">
-
-            <ImageView
-                android:id="@+id/menu_image_view_virus"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/ic_home_virus"
-                />
-            <TextView
-                android:id="@+id/menu_card_text_covid"
-                android:layout_alignParentBottom="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="O que é a SARS-Cov-2" />
-        </RelativeLayout>
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/menu_card_view_dicas_prevencao"
-        android:layout_width="@dimen/menu_card_view_size"
-        android:layout_height="@dimen/menu_card_view_size"
-        app:layout_constraintTop_toTopOf="@id/menu_card_view_virus"
-        app:layout_constraintRight_toRightOf="parent"
-        app:cardCornerRadius="10dp"
-        app:strokeColor="@color/black"
-        app:strokeWidth="1dp" >
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp">
-
-            <ImageView
-                android:id="@+id/menu_image_view_dicas"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/ic_home_dicas"
-                />
-            <TextView
-                android:id="@+id/menu_card_text_dicas"
-                android:layout_alignParentBottom="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Dicas de Prevenção" />
-        </RelativeLayout>
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/menu_card_view_sobre_vacina"
-        android:layout_width="@dimen/menu_card_view_size"
-        android:layout_height="@dimen/menu_card_view_size"
-        app:layout_constraintTop_toBottomOf="@id/menu_card_view_virus"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:cardCornerRadius="10dp"
-        app:strokeColor="@color/black"
-        app:strokeWidth="1dp"
-        android:layout_marginTop="70dp">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/menu_card_view_virus"
+            android:layout_width="@dimen/menu_card_view_size"
+            android:layout_height="@dimen/menu_card_view_size"
+            app:cardCornerRadius="@dimen/menu_card_view_corner_radius"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"
+            android:layout_marginEnd="@dimen/menu_card_view_between_margins"
+            android:layout_marginBottom="@dimen/menu_card_view_between_margins">
 
-            <ImageView
-                android:id="@+id/menu_image_view_sobre_vacina"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/ic_home_sobre_vacina"
-                />
-            <TextView
-                android:id="@+id/menu_card_text_sobre_vacina"
-                android:layout_alignParentBottom="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Sobre a Vacina" />
-        </RelativeLayout>
-    </com.google.android.material.card.MaterialCardView>
-    
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/menu_padding">
 
+                <ImageView
+                    android:id="@+id/menu_image_view_virus"
+                    android:layout_width="@dimen/menu_ic_size"
+                    android:layout_height="@dimen/menu_ic_size"
+                    android:src="@drawable/ic_home_virus"
+                    android:contentDescription="@string/ic_menu_card_view_virus_description"/>
+                <TextView
+                    android:id="@+id/menu_card_text_covid"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_card_view_virus_text"/>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/menu_card_view_prevention_tips"
+            android:layout_width="@dimen/menu_card_view_size"
+            android:layout_height="@dimen/menu_card_view_size"
+            app:cardCornerRadius="@dimen/menu_card_view_corner_radius"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/menu_padding">
+
+                <ImageView
+                    android:id="@+id/menu_image_view_tips"
+                    android:layout_width="@dimen/menu_ic_size"
+                    android:layout_height="@dimen/menu_ic_size"
+                    android:contentDescription="@string/ic_menu_card_view_prevention_tips_description"
+                    android:src="@drawable/ic_home_tips" />
+                <TextView
+                    android:id="@+id/menu_card_text_tips"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_text_card_view_tips"/>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/menu_card_view_about_vaccine"
+            android:layout_width="@dimen/menu_card_view_size"
+            android:layout_height="@dimen/menu_card_view_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="@dimen/menu_card_view_corner_radius"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/menu_padding">
+
+                <ImageView
+                    android:id="@+id/menu_image_view_about_vaccine"
+                    android:layout_width="@dimen/menu_ic_size"
+                    android:layout_height="@dimen/menu_ic_size"
+                    android:src="@drawable/ic_home_about_vaccine"
+                    android:contentDescription="@string/ic_menu_card_view_about_vaccine_description"/>
+                <TextView
+                    android:id="@+id/menu_card_text_about_vaccine"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_text_card_view_about_vaccine"/>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/menu_card_view_statistics"
+            android:layout_width="@dimen/menu_card_view_size"
+            android:layout_height="@dimen/menu_card_view_size"
+            app:cardCornerRadius="@dimen/menu_card_view_corner_radius"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/menu_padding">
+
+                <ImageView
+                    android:id="@+id/menu_image_view_statistics"
+                    android:layout_width="@dimen/menu_ic_size"
+                    android:layout_height="@dimen/menu_ic_size"
+                    android:src="@drawable/ic_home_statistics"
+                    android:contentDescription="@string/ic_menu_card_view_statistics_description"/>
+                <TextView
+                    android:id="@+id/menu_card_text_statistics"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_text_card_view_statistics"/>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
