@@ -17,4 +17,14 @@
     <string name="ic_menu_card_view_prevention_tips_description">Ícone de Livro.</string>
     <string name="ic_menu_card_view_about_vaccine_description">Ícone de Seringa.</string>
     <string name="ic_menu_card_view_statistics_description">Ícone de Gráfico em Barra.</string>
+    <string name="home_card_view_virus_text">O que é a SARS-Cov-2</string>
+    <string name="home_text_card_view_tips">Dicas de Prevenção</string>
+    <string name="home_text_card_view_about_vaccine">Sobre a Vacina</string>
+    <string name="home_text_card_view_statistics">Estatísticas do Covid-19</string>
+    <string name="ic_home_card_view_virus_description">Ícone de Virus.</string>
+    <string name="ic_home_card_view_prevention_tips_description">Ícone de Livro.</string>
+    <string name="ic_home_card_view_about_vaccine_description">Ícone de Seringa.</string>
+    <string name="ic_home_card_view_statistics_description">Ícone de Gráfico em Barra.</string>
+    <string name="home_text_title">Informações para você</string>
+    <string name="home_text_description">Aqui você encontra informações relevantes a respeito da SARS-Cov-2</string>
 </resources>
