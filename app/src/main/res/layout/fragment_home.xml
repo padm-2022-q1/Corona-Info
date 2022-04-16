@@ -56,8 +56,8 @@
                     android:id="@+id/home_image_view_virus"
                     android:layout_width="@dimen/home_ic_size"
                     android:layout_height="@dimen/home_ic_size"
-                    android:src="@drawable/ic_home_virus"
-                    android:contentDescription="@string/ic_home_card_view_virus_description"/>
+                    android:contentDescription="@string/ic_home_card_view_virus_description"
+                    android:src="@drawable/ic_covid_virus" />
                 <TextView
                     android:id="@+id/home_card_text_covid"
                     android:layout_alignParentBottom="true"
@@ -85,7 +85,7 @@
                     android:layout_width="@dimen/home_ic_size"
                     android:layout_height="@dimen/home_ic_size"
                     android:contentDescription="@string/ic_home_card_view_prevention_tips_description"
-                    android:src="@drawable/ic_home_tips" />
+                    android:src="@drawable/ic_bulb_light" />
                 <TextView
                     android:id="@+id/home_card_text_tips"
                     android:layout_alignParentBottom="true"
@@ -113,8 +113,8 @@
                     android:id="@+id/home_image_view_about_vaccine"
                     android:layout_width="@dimen/home_ic_size"
                     android:layout_height="@dimen/home_ic_size"
-                    android:src="@drawable/ic_home_about_vaccine"
-                    android:contentDescription="@string/ic_home_card_view_about_vaccine_description"/>
+                    android:contentDescription="@string/ic_home_card_view_about_vaccine_description"
+                    android:src="@drawable/ic_syringe" />
                 <TextView
                     android:id="@+id/home_card_text_about_vaccine"
                     android:layout_alignParentBottom="true"
@@ -141,8 +141,8 @@
                     android:id="@+id/home_image_view_statistics"
                     android:layout_width="@dimen/home_ic_size"
                     android:layout_height="@dimen/home_ic_size"
-                    android:src="@drawable/ic_home_statistics"
-                    android:contentDescription="@string/ic_home_card_view_statistics_description"/>
+                    android:contentDescription="@string/ic_home_card_view_statistics_description"
+                    android:src="@drawable/ic_graphic" />
                 <TextView
                     android:id="@+id/home_card_text_statistics"
                     android:layout_alignParentBottom="true"
