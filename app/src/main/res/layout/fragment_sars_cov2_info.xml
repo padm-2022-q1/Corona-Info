@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="35dp"
+    android:layout_marginTop="20dp"
+    tools:context=".SarsCov2InfoFragment">
+
+
+    <TextView
+        android:id="@+id/oque_e_sars_cov_2_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/oque_e_sars_cov_2_titulo"
+        android:textAlignment="center"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        app:layout_constrainedHeight="true"
+
+        />
+
+
+    <TextView
+        android:id="@+id/oque_e_sars_cov_2_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/oque_e_sars_cov_2_text"
+        android:textSize="@dimen/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oque_e_sars_cov_2_titulo" />
+
+    <TextView
+        android:id="@+id/oque_e_sars_cov_2_fonte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/oque_e_sars_cov_2_fonte"
+        android:textAlignment="viewEnd"
+        android:textSize="@dimen/font"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oque_e_sars_cov_2_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

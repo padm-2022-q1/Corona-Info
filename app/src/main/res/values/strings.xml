@@ -6,4 +6,7 @@
     <string name="statistics_card_text_confirmed_cases_100k">Casos confirmados por 100 mil habitantes</string>
     <string name="statistics_card_text_death_rate">Taxa de mortalidade.</string>
     <string name="statistics_card_text_populacao_estimada">População estimada.</string>
+    <string name="oque_e_sars_cov_2_titulo">Oque é SARS-CoV-2?</string>
+    <string name="oque_e_sars_cov_2_text">\tCovid-19 é uma infecção respiratória aguda causada pelo coronavírus SARS-CoV-2, potencialmente grave, de elevada transmissibilidade e de distribuição global.\n\n O SARS-CoV-2 é um betacoronavírus descoberto em amostras de lavado broncoalveolar obtidas de pacientes com pneumonia de causa desconhecida na cidade de Wuhan, província de Hubei, China, em dezembro de 2019. Pertence ao subgênero Sarbecovírus da família Coronaviridae e é o sétimo coronavírus conhecido a infectar seres humanos.\n\n Os coronavírus são uma grande família de vírus comuns em muitas espécies diferentes de animais, incluindo o homem, camelos, gado, gatos e morcegos. Raramente os coronavírus de animais podem infectar pessoas e depois se espalhar entre seres humanos como já ocorreu com o MERS-CoV e o SARS-CoV-2. Até o momento, não foi definido o reservatório silvestre do SARS-CoV-2.</string>
+    <string name="oque_e_sars_cov_2_fonte">https://www.gov.br/saude/pt-br/coronavirus/o-que-e-o-coronavirus</string>
 </resources>
