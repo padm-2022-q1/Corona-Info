@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id "org.jlleitschuh.gradle.ktlint"
+    id "io.gitlab.arturbosch.detekt"
 }
 
 android {
@@ -29,9 +31,23 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    lint {
+        abortOnError true
+        ignoreWarnings false
+        warningsAsErrors true
+    }
     buildFeatures {
         viewBinding true
     }
+}
+
+ktlint {
+    outputToConsole = true
+    disabledRules = ["import-ordering"]
+}
+
+detekt {
+    allRules true
 }
 
 dependencies {
