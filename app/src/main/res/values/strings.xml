@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Corona-Info</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="statistics_death_numbers">Número de mortes</string>
+    <string name="statistics_card_text_confirmed_cases">Casos Confirmados.</string>
+    <string name="statistics_card_text_confirmed_cases_100k">Casos confirmados por 100 mil habitantes</string>
+    <string name="statistics_card_text_death_rate">Taxa de mortalidade.</string>
+    <string name="statistics_card_text_populacao_estimada">População estimada.</string>
 </resources>
