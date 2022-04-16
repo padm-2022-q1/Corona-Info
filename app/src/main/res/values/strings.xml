@@ -1,9 +1,16 @@
 <resources>
     <string name="app_name">Corona-Info</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="statistics_death_numbers">Número de mortes</string>
     <string name="statistics_card_text_confirmed_cases">Casos Confirmados.</string>
     <string name="statistics_card_text_confirmed_cases_100k">Casos confirmados por 100 mil habitantes</string>
     <string name="statistics_card_text_death_rate">Taxa de mortalidade.</string>
     <string name="statistics_card_text_populacao_estimada">População estimada.</string>
+    <string name="menu_card_view_virus_text">O que é a SARS-Cov-2</string>
+    <string name="menu_text_card_view_tips">Dicas de Prevenção</string>
+    <string name="menu_text_card_view_about_vaccine">Sobre a Vacina</string>
+    <string name="menu_text_card_view_statistics">Estatísticas do Covid-19</string>
+    <string name="ic_menu_card_view_virus_description">Ícone de Virus.</string>
+    <string name="ic_menu_card_view_prevention_tips_description">Ícone de Livro.</string>
+    <string name="ic_menu_card_view_about_vaccine_description">Ícone de Seringa.</string>
+    <string name="ic_menu_card_view_statistics_description">Ícone de Gráfico em Barra.</string>
 </resources>
