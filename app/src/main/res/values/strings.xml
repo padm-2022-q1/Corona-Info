@@ -26,5 +26,5 @@
     <string name="ic_home_card_view_about_vaccine_description">Ícone de Seringa.</string>
     <string name="ic_home_card_view_statistics_description">Ícone de Gráfico em Barra.</string>
     <string name="home_text_title">Informações para você</string>
-    <string name="home_text_description">Aqui você encontra informações relevantes a respeito da SARS-Cov-2</string>
+    <string name="home_text_description">Bem vindo(a), aqui você encontra informações relevantes a respeito do Covid-19</string>
 </resources>
