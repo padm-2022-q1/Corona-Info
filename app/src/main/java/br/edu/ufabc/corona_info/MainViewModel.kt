@@ -1,11 +1,10 @@
 package br.edu.ufabc.corona_info
 
-import android.app.Application
-import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.ViewModel
 
 /**
  * Main ViewModel.
  */
-class MainViewModel(application: Application) : AndroidViewModel(application) {
+class MainViewModel: ViewModel() {
 
 }
