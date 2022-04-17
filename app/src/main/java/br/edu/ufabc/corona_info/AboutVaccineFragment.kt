@@ -5,17 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import br.edu.ufabc.corona_info.databinding.FragmentStatisticsBinding
+import br.edu.ufabc.corona_info.databinding.FragmentAboutVaccineBinding
 
-class StatisticsFragment : Fragment() {
-    private lateinit var binding: FragmentStatisticsBinding
+class AboutVaccineFragment : Fragment() {
+    private lateinit var binding: FragmentAboutVaccineBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentStatisticsBinding.inflate(inflater, container, false)
+        binding = FragmentAboutVaccineBinding.inflate(inflater, container, false)
         return binding.root
     }
 }
