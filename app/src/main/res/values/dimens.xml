@@ -14,4 +14,6 @@
     <dimen name="home_card_view_between_margins">30dp</dimen>
     <dimen name="home_padding">10dp</dimen>
     <dimen name="home_ic_size">50dp</dimen>
+    <dimen name="icons_tips_size">120dp</dimen>
+    <dimen name="icon_tips_checkeds_size">20dp</dimen>
 </resources>
