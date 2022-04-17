@@ -27,4 +27,10 @@
     <string name="ic_home_card_view_statistics_description">Ícone de Gráfico em Barra.</string>
     <string name="home_text_title">Informações para você</string>
     <string name="home_text_description">Bem vindo(a), aqui você encontra informações relevantes a respeito do Covid-19</string>
+    <string name="ic_statistics_card_view_death_numbers_description">Ícone de gráfico em barra.</string>
+    <string name="ic_statistics_card_view_confirmed_cases_description">Ícone de confirmação.</string>
+    <string name="ic_statistics_card_view_death_rate_description">Ícone de pessoa doente.</string>
+    <string name="ic_statistics_card_view_estimated_population_description">Ícone de duas pessoas, em dupla.</string>
+    <string name="ic_statistics_card_view_confirmed_cases_100k_description">Ícone de gráfico em linha com curva.</string>
+
 </resources>

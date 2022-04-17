@@ -4,6 +4,7 @@
     <dimen name="statistics_card_view_width">180dp</dimen>
     <dimen name="menu_card_view_corner_radius">10dp</dimen>
     <dimen name="menu_card_view_between_margins">30dp</dimen>
+    <dimen name="statistics_card_view_between_margins">30dp</dimen>
     <dimen name="menu_padding">10dp</dimen>
     <dimen name="menu_ic_size">50dp</dimen>
     <dimen name="title">30sp</dimen>
