@@ -27,6 +27,16 @@ class MainActivity : AppCompatActivity() {
                         replace(binding.mainFragmentContainer.id, SarsCov2InfoFragment())
                         addToBackStack(null)
                     }
+                HomeFragment.MenuItens.PREVENTION ->
+                    supportFragmentManager.commit {
+                        replace(binding.mainFragmentContainer.id, PreventionTipsFragment())
+                        addToBackStack(null)
+                    }
+                HomeFragment.MenuItens.VACCINE ->
+                    supportFragmentManager.commit {
+                        replace(binding.mainFragmentContainer.id, AboutVaccineFragment())
+                        addToBackStack(null)
+                    }
                 HomeFragment.MenuItens.STATISTICS ->
                     supportFragmentManager.commit {
                         replace(binding.mainFragmentContainer.id, StatisticsFragment())
