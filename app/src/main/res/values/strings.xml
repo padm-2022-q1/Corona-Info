@@ -32,5 +32,22 @@
     <string name="ic_statistics_card_view_death_rate_description">Ícone de pessoa doente.</string>
     <string name="ic_statistics_card_view_estimated_population_description">Ícone de duas pessoas, em dupla.</string>
     <string name="ic_statistics_card_view_confirmed_cases_100k_description">Ícone de gráfico em linha com curva.</string>
-
+    <string name="text_dirty_hands_tip">Não espirre na palma da sua mão</string>
+    <string name="text_sneeze_tip">Ao espirrar use o antebraço ou o cotovelo</string>
+    <string name="text_hand_shake_virus_tip">Não toque nos olhos, boca e/ou nariz com as mãos</string>
+    <string name="text_face_mask_tip">Use sempre a máscara e, se possível, use luvas</string>
+    <string name="text_virus_spread_tip">Evite aglomerações de pessoas</string>
+    <string name="text_distance_tip">Mantenha distancia de no mínimo 1.5M de outras pessoas</string>
+    <string name="text_washing_hands_tip">Lave bem as mãos frequentemente com água e sabão</string>
+    <string name="text_stay_home_tip">Se possível fique em casa!</string>
+    <string name="ic_dirty_hands_description">Mãos contaminadas</string>
+    <string name="ic_sneeze_description">Homem espirrando</string>
+    <string name="ic_hand_shake_virus_description">Aperto de mãos contaminadas</string>
+    <string name="ic_face_mask_description">Homem de máscara no rosto</string>
+    <string name="ic_virus_spread_description">Cadeia de contaminação</string>
+    <string name="ic_distance_description">Distanciamento entre pessoas</string>
+    <string name="ic_washing_hands_description">Lavando as mãos</string>
+    <string name="ic_stay_home_description">Pessoa dentro de casa</string>
+    <string name="ic_wrong_description">Ícone de Xis vermelho</string>
+    <string name="ic_check_description">Ícone de correto verde</string>
 </resources>

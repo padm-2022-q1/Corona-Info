@@ -61,7 +61,7 @@
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/statistics_card_view_casos_confirmados"
             android:layout_width="@dimen/statistics_card_view_width"
-            android:layout_height="@dimen/menu_card_view_size"
+            android:layout_height="@dimen/home_card_view_size"
             app:layout_constraintTop_toBottomOf="@id/statistics_card_view_mortes"
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginTop="10dp"
@@ -94,7 +94,7 @@
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/statistics_card_view_casos_confirmados_100k"
             android:layout_width="@dimen/statistics_card_view_width"
-            android:layout_height="@dimen/menu_card_view_size"
+            android:layout_height="@dimen/home_card_view_size"
             app:layout_constraintTop_toBottomOf="@id/statistics_card_view_mortes"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="10dp"
@@ -126,7 +126,7 @@
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/statistics_card_view_taxa_mortalidade"
             android:layout_width="@dimen/statistics_card_view_width"
-            android:layout_height="@dimen/menu_card_view_size"
+            android:layout_height="@dimen/home_card_view_size"
             app:layout_constraintTop_toBottomOf="@id/statistics_card_view_casos_confirmados"
             app:layout_constraintStart_toStartOf="@id/statistics_card_view_casos_confirmados"
             android:layout_marginTop="10dp"
@@ -158,7 +158,7 @@
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/statistics_card_view_populacao_estimada"
             android:layout_width="@dimen/statistics_card_view_width"
-            android:layout_height="@dimen/menu_card_view_size"
+            android:layout_height="@dimen/home_card_view_size"
             app:layout_constraintTop_toBottomOf="@id/statistics_card_view_casos_confirmados"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="10dp"
