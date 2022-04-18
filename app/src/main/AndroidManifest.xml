@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.edu.ufabc.coronaInfo">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.edu.ufabc.coronaInfo"
+    tools:ignore="LockedOrientationActivity">
 
     <application
         android:allowBackup="true"
@@ -11,10 +13,10 @@
         android:theme="@style/Theme.CoronaInfo">
         <activity
             android:name="br.edu.ufabc.coronaInfo.MainActivity"
+            android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
