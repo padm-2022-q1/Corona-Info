@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="home_card_view_size">150dp</dimen>
-    <dimen name="statistics_card_view_width">180dp</dimen>
     <dimen name="statistics_card_view_between_margins">30dp</dimen>
     <dimen name="about_vaccine_vacine_title_size">20sp</dimen>
     <dimen name="title">30sp</dimen>

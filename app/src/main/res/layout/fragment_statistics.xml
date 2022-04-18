@@ -69,7 +69,7 @@
             app:cardCornerRadius="10dp"
             app:strokeColor="@color/black"
             app:strokeWidth="1dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginEnd="@dimen/statistics_card_view_between_margins"
             android:layout_marginBottom="@dimen/statistics_card_view_between_margins">
             <RelativeLayout
                 android:layout_width="match_parent"
