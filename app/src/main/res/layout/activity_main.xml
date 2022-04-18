@@ -7,7 +7,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/main_fragment_container"
-        android:name="br.edu.ufabc.corona_info.HomeFragment"
+        android:name="br.edu.ufabc.coronaInfo.HomeFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </FrameLayout>

@@ -1,9 +1,9 @@
-package br.edu.ufabc.corona_info
+package br.edu.ufabc.coronaInfo
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.commit
-import br.edu.ufabc.corona_info.databinding.ActivityMainBinding
+import br.edu.ufabc.coronaInfo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,8 +17,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun bindEvents() {
-        supportFragmentManager.setFragmentResultListener(HomeFragment.itemClickedKey,
-            this) {
+        supportFragmentManager.setFragmentResultListener(
+            HomeFragment.itemClickedKey,
+            this
+        ) {
             _, bundle ->
 
             when (bundle.get(HomeFragment.itemClickedValue)) {

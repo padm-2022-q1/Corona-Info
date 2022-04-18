@@ -1,4 +1,4 @@
-package br.edu.ufabc.corona_info
+package br.edu.ufabc.coronaInfo
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.setFragmentResult
-import br.edu.ufabc.corona_info.databinding.FragmentHomeBinding
+import br.edu.ufabc.coronaInfo.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 
@@ -26,7 +26,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
-        return  binding.root
+        return binding.root
     }
 
     override fun onStart() {

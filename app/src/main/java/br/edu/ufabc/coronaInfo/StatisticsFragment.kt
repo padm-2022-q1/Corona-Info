@@ -1,21 +1,21 @@
-package br.edu.ufabc.corona_info
+package br.edu.ufabc.coronaInfo
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import br.edu.ufabc.corona_info.databinding.FragmentSarsCov2InfoBinding
+import br.edu.ufabc.coronaInfo.databinding.FragmentStatisticsBinding
 
-class SarsCov2InfoFragment : Fragment() {
-    private lateinit var binding: FragmentSarsCov2InfoBinding
+class StatisticsFragment : Fragment() {
+    private lateinit var binding: FragmentStatisticsBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentSarsCov2InfoBinding.inflate(inflater, container, false)
+        binding = FragmentStatisticsBinding.inflate(inflater, container, false)
         return binding.root
     }
 }

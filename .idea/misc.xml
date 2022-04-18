@@ -17,6 +17,26 @@
         <entry key="..\:/Users/Vitor/Desktop/corona-info/Corona-Info/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Vitor/Desktop/corona-info/Corona-Info/app/src/main/res/layout/fragment_sars_cov2_info.xml" value="0.36102564102564105" />
         <entry key="..\:/Users/Vitor/Desktop/corona-info/Corona-Info/app/src/main/res/layout/fragment_statistics.xml" value="0.33" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_bulb_light.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_check.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_covid_virus.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_dirty_hands.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_distance.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_face_mask.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_graphic.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_hand_shake_virus.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_sneeze.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_statistics_confirmed_cases.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_statistics_confirmed_cases_100k.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_statistics_death_numbers.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_statistics_death_rate.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_statistics_estimated_population.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_stay_home.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_syringe.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_virus_spread.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_washing_hands.xml" value="0.1" />
+        <entry key="..\:/Users/mts01/Desktop/AULAS/PADM/Corona-Info/app/src/main/res/drawable/ic_wrong.xml" value="0.1" />
       </map>
     </option>
   </component>
