@@ -13,7 +13,7 @@ class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
 
-    enum class MenuItens { INFO, STATISTICS }
+    enum class MenuItens { INFO, PREVENTION, VACCINE, STATISTICS }
 
     companion object {
         const val itemClickedKey = "itemClickedKey"
@@ -37,6 +37,14 @@ class HomeFragment : Fragment() {
     private fun bindEvents() {
         binding.homeCardViewVirus.setOnClickListener {
             setFragmentResult(itemClickedKey, bundleOf(itemClickedValue to MenuItens.INFO))
+        }
+
+        binding.homeCardViewPreventionTips.setOnClickListener {
+            setFragmentResult(itemClickedKey, bundleOf(itemClickedValue to MenuItens.PREVENTION))
+        }
+
+        binding.homeCardViewAboutVaccine.setOnClickListener {
+            setFragmentResult(itemClickedKey, bundleOf(itemClickedValue to MenuItens.VACCINE))
         }
 
         binding.homeCardViewStatistics.setOnClickListener {
