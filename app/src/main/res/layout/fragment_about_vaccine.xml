@@ -1,8 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginHorizontal="35dp"
+    android:layout_marginTop="20dp"
     tools:context=".AboutVaccineFragment">
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/about_vaccine_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about_vaccine_title"
+        android:textAlignment="center"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/about_vaccine_title"
+        app:layout_constraintTop_toBottomOf="@+id/about_vaccine_title"
+        app:layout_constraintBottom_toBottomOf="parent" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/about_vaccine_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_vaccine_text"
+                android:textSize="@dimen/text" />
+
+            <TextView
+                android:id="@+id/about_vaccine_coronavac_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/about_vaccine_coronavac_title"
+                android:textStyle="bold"
+                android:textSize="@dimen/about_vaccine_vacine_title_size" />
+
+            <TextView
+                android:id="@+id/about_vaccine_coronavac_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/about_vaccine_coronavac_text"
+                android:textSize="@dimen/text" />
+
+            <TextView
+                android:id="@+id/about_vaccine_astrazeneca_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/about_vaccine_astrazeneca_title"
+                android:textStyle="bold"
+                android:textSize="@dimen/about_vaccine_vacine_title_size"/>
+
+            <TextView
+                android:id="@+id/about_vaccine_astrazeneca_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/about_vaccine_astrazeneca_text"
+                android:textSize="@dimen/text" />
+
+            <TextView
+                android:id="@+id/about_vaccine_pfizer_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/about_vaccine_pfizer_title"
+                android:textStyle="bold"
+                android:textSize="@dimen/about_vaccine_vacine_title_size"/>
+
+            <TextView
+                android:id="@+id/about_vaccine_pfizer_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/about_vaccine_pfizer_text"
+                android:textSize="@dimen/text" />
+
+            <TextView
+                android:id="@+id/about_vaccine_janssen_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/about_vaccine_janssen_title"
+                android:textStyle="bold"
+                android:textSize="@dimen/about_vaccine_vacine_title_size"/>
+
+            <TextView
+                android:id="@+id/about_vaccine_janssen_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/about_vaccine_janssen_text"
+                android:textSize="@dimen/text" />
+
+
+            <TextView
+                android:id="@+id/about_vaccine_fonte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/about_vaccine_fonte"
+                android:textAlignment="viewEnd"
+                android:textSize="@dimen/font"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/about_vaccine_text"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
