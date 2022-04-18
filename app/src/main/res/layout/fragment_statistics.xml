@@ -19,10 +19,11 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/statistics_card_view_mortes"
-        android:layout_width="match_parent"
+        android:layout_width="330dp"
         android:layout_height="@dimen/home_card_view_size"
         app:layout_constraintTop_toBottomOf="@id/statistics_dropdown_list"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="10dp"
         app:cardCornerRadius="10dp"
         app:strokeColor="@color/black"
@@ -60,7 +61,7 @@
         android:columnCount="2">
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/statistics_card_view_casos_confirmados"
-            android:layout_width="@dimen/statistics_card_view_width"
+            android:layout_width="@dimen/home_card_view_size"
             android:layout_height="@dimen/home_card_view_size"
             app:layout_constraintTop_toBottomOf="@id/statistics_card_view_mortes"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -68,7 +69,7 @@
             app:cardCornerRadius="10dp"
             app:strokeColor="@color/black"
             app:strokeWidth="1dp"
-            android:layout_marginEnd="@dimen/statistics_card_view_between_margins"
+            android:layout_marginEnd="30dp"
             android:layout_marginBottom="@dimen/statistics_card_view_between_margins">
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -93,7 +94,7 @@
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/statistics_card_view_casos_confirmados_100k"
-            android:layout_width="@dimen/statistics_card_view_width"
+            android:layout_width="@dimen/home_card_view_size"
             android:layout_height="@dimen/home_card_view_size"
             app:layout_constraintTop_toBottomOf="@id/statistics_card_view_mortes"
             app:layout_constraintEnd_toEndOf="parent"
@@ -125,7 +126,7 @@
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/statistics_card_view_taxa_mortalidade"
-            android:layout_width="@dimen/statistics_card_view_width"
+            android:layout_width="@dimen/home_card_view_size"
             android:layout_height="@dimen/home_card_view_size"
             app:layout_constraintTop_toBottomOf="@id/statistics_card_view_casos_confirmados"
             app:layout_constraintStart_toStartOf="@id/statistics_card_view_casos_confirmados"
@@ -157,7 +158,7 @@
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/statistics_card_view_populacao_estimada"
-            android:layout_width="@dimen/statistics_card_view_width"
+            android:layout_width="@dimen/home_card_view_size"
             android:layout_height="@dimen/home_card_view_size"
             app:layout_constraintTop_toBottomOf="@id/statistics_card_view_casos_confirmados"
             app:layout_constraintEnd_toEndOf="parent"

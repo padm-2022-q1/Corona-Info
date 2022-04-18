@@ -8,8 +8,6 @@
     android:layout_marginTop="20dp"
     tools:context=".SarsCov2InfoFragment">
 
-
-
     <TextView
         android:id="@+id/oque_e_sars_cov_2_titulo"
         android:layout_width="match_parent"
@@ -22,44 +20,35 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/oque_e_sars_cov_2_titulo"
+        app:layout_constraintStart_toStartOf="@id/oque_e_sars_cov_2_titulo"
         android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/oque_e_sars_cov_2_titulo"
-        app:layout_constraintTop_toBottomOf="@+id/oque_e_sars_cov_2_titulo"
-        app:layout_constraintVertical_bias="0.0">
+        android:orientation="vertical">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/oque_e_sars_cov_2_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:scrollbars="vertical">
+            android:layout_marginTop="20dp"
+            android:text="@string/oque_e_sars_cov_2_text"
+            android:textSize="@dimen/text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/oque_e_sars_cov_2_titulo" />
 
-            <TextView
-                android:id="@+id/oque_e_sars_cov_2_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="@string/oque_e_sars_cov_2_text"
-                android:textSize="@dimen/text"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/oque_e_sars_cov_2_titulo" />
-
-            <TextView
-                android:id="@+id/oque_e_sars_cov_2_fonte"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:text="@string/oque_e_sars_cov_2_fonte"
-                android:textAlignment="viewEnd"
-                android:textSize="@dimen/font"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/oque_e_sars_cov_2_text" />
-        </LinearLayout>
-    </ScrollView>
+        <TextView
+            android:id="@+id/oque_e_sars_cov_2_fonte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/oque_e_sars_cov_2_fonte"
+            android:textAlignment="viewEnd"
+            android:textSize="@dimen/font"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/oque_e_sars_cov_2_text" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

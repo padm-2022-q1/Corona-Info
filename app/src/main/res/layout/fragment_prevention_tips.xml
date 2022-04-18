@@ -7,248 +7,235 @@
     tools:context=".PreventionTipsFragment"
     android:padding="10dp">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/ic_tip_1_wrong"
+        android:layout_width="@dimen/icons_tips_size"
+        android:layout_height="@dimen/icons_tips_size"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        android:src="@drawable/ic_dirty_hands"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/ic_dirty_hands_description"/>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ic_tip_1_x"
+        android:layout_width="@dimen/icon_tips_checkeds_size"
+        android:layout_height="@dimen/icon_tips_checkeds_size"
+        android:src="@drawable/ic_wrong"
+        app:layout_constraintTop_toTopOf="@id/ic_tip_1_wrong"
+        app:layout_constraintStart_toEndOf="@id/ic_tip_1_wrong"
+        android:contentDescription="@string/ic_wrong_description"/>
 
-            <ImageView
-                android:id="@+id/ic_tip_1_wrong"
-                android:layout_width="@dimen/icons_tips_size"
-                android:layout_height="@dimen/icons_tips_size"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.12"
-                android:src="@drawable/ic_dirty_hands"
-                android:layout_marginTop="28dp"
-                android:contentDescription="@string/ic_dirty_hands_description"/>
+    <TextView
+        android:id="@+id/tip_1_text_wrong_1"
+        android:layout_width="@dimen/icons_tips_size"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ic_tip_1_wrong"
+        app:layout_constraintStart_toStartOf="@id/ic_tip_1_wrong"
+        android:text="@string/text_dirty_hands_tip"
+        android:gravity="center" />
 
-            <ImageView
-                android:id="@+id/ic_tip_1_x"
-                android:layout_width="@dimen/icon_tips_checkeds_size"
-                android:layout_height="@dimen/icon_tips_checkeds_size"
-                android:src="@drawable/ic_wrong"
-                app:layout_constraintTop_toTopOf="@id/ic_tip_1_wrong"
-                app:layout_constraintStart_toEndOf="@id/ic_tip_1_wrong"
-                android:contentDescription="@string/ic_wrong_description"/>
+    <ImageView
+        android:id="@+id/ic_tip_1_right"
+        android:layout_width="@dimen/icons_tips_size"
+        android:layout_height="@dimen/icons_tips_size"
+        android:src="@drawable/ic_sneeze"
+        app:layout_constraintTop_toTopOf="@id/ic_tip_1_wrong"
+        app:layout_constraintStart_toEndOf="@id/ic_tip_1_x"
+        android:layout_marginStart="40dp"
+        android:contentDescription="@string/ic_sneeze_description"/>
 
-            <TextView
-                android:id="@+id/tip_1_text_wrong_1"
-                android:layout_width="@dimen/icons_tips_size"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/ic_tip_1_wrong"
-                app:layout_constraintStart_toStartOf="@id/ic_tip_1_wrong"
-                android:text="@string/text_dirty_hands_tip"
-                android:gravity="center" />
+    <ImageView
+        android:id="@+id/ic_tip_1_check"
+        android:layout_width="@dimen/icon_tips_checkeds_size"
+        android:layout_height="@dimen/icon_tips_checkeds_size"
+        android:src="@drawable/ic_check"
+        app:layout_constraintTop_toTopOf="@id/ic_tip_1_right"
+        app:layout_constraintStart_toEndOf="@id/ic_tip_1_right"
+        android:contentDescription="@string/ic_check_description"/>
 
-            <ImageView
-                android:id="@+id/ic_tip_1_right"
-                android:layout_width="@dimen/icons_tips_size"
-                android:layout_height="@dimen/icons_tips_size"
-                android:src="@drawable/ic_sneeze"
-                app:layout_constraintTop_toTopOf="@id/ic_tip_1_wrong"
-                app:layout_constraintStart_toEndOf="@id/ic_tip_1_x"
-                android:layout_marginStart="40dp"
-                android:contentDescription="@string/ic_sneeze_description"/>
+    <TextView
+        android:id="@+id/tip_1_text_right"
+        android:layout_width="@dimen/icons_tips_size"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ic_tip_1_right"
+        app:layout_constraintStart_toStartOf="@id/ic_tip_1_right"
+        android:text="@string/text_sneeze_tip"
+        android:gravity="center" />
 
-            <ImageView
-                android:id="@+id/ic_tip_1_check"
-                android:layout_width="@dimen/icon_tips_checkeds_size"
-                android:layout_height="@dimen/icon_tips_checkeds_size"
-                android:src="@drawable/ic_check"
-                app:layout_constraintTop_toTopOf="@id/ic_tip_1_right"
-                app:layout_constraintStart_toEndOf="@id/ic_tip_1_right"
-                android:contentDescription="@string/ic_check_description"/>
+    <!--Dica 2-->
 
-            <TextView
-                android:id="@+id/tip_1_text_right"
-                android:layout_width="@dimen/icons_tips_size"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/ic_tip_1_right"
-                app:layout_constraintStart_toStartOf="@id/ic_tip_1_right"
-                android:text="@string/text_sneeze_tip"
-                android:gravity="center" />
+    <ImageView
+        android:id="@+id/ic_tip_2_wrong_2"
+        android:layout_width="@dimen/icons_tips_size"
+        android:layout_height="@dimen/icons_tips_size"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_hand_shake_virus"
+        app:layout_constraintStart_toStartOf="@+id/ic_tip_1_wrong"
+        app:layout_constraintTop_toBottomOf="@id/tip_1_text_wrong_1"
+        android:contentDescription="@string/ic_hand_shake_virus_description"/>
 
-            <!--Dica 2-->
+    <ImageView
+        android:id="@+id/ic_tip_2_x"
+        android:layout_width="@dimen/icon_tips_checkeds_size"
+        android:layout_height="@dimen/icon_tips_checkeds_size"
+        android:src="@drawable/ic_wrong"
+        app:layout_constraintTop_toTopOf="@id/ic_tip_2_wrong_2"
+        app:layout_constraintStart_toEndOf="@id/ic_tip_2_wrong_2"
+        android:contentDescription="@string/ic_wrong_description"/>
 
-            <ImageView
-                android:id="@+id/ic_tip_2_wrong_2"
-                android:layout_width="@dimen/icons_tips_size"
-                android:layout_height="@dimen/icons_tips_size"
-                android:layout_marginTop="40dp"
-                android:src="@drawable/ic_hand_shake_virus"
-                app:layout_constraintStart_toStartOf="@+id/ic_tip_1_wrong"
-                app:layout_constraintTop_toBottomOf="@id/tip_1_text_wrong_1"
-                android:contentDescription="@string/ic_hand_shake_virus_description"/>
+    <TextView
+        android:id="@+id/tip_2_text_wrong_2"
+        android:layout_width="@dimen/icons_tips_size"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ic_tip_2_wrong_2"
+        app:layout_constraintStart_toStartOf="@id/ic_tip_2_wrong_2"
+        android:text="@string/text_hand_shake_virus_tip"
+        android:gravity="center" />
 
-            <ImageView
-                android:id="@+id/ic_tip_2_x"
-                android:layout_width="@dimen/icon_tips_checkeds_size"
-                android:layout_height="@dimen/icon_tips_checkeds_size"
-                android:src="@drawable/ic_wrong"
-                app:layout_constraintTop_toTopOf="@id/ic_tip_2_wrong_2"
-                app:layout_constraintStart_toEndOf="@id/ic_tip_2_wrong_2"
-                android:contentDescription="@string/ic_wrong_description"/>
+    <ImageView
+        android:id="@+id/ic_tip_2_right"
+        android:layout_width="@dimen/icons_tips_size"
+        android:layout_height="@dimen/icons_tips_size"
+        android:src="@drawable/ic_face_mask"
+        app:layout_constraintTop_toTopOf="@id/ic_tip_2_wrong_2"
+        app:layout_constraintStart_toEndOf="@id/ic_tip_2_x"
+        android:layout_marginStart="40dp"
+        android:contentDescription="@string/ic_face_mask_description"/>
 
-            <TextView
-                android:id="@+id/tip_2_text_wrong_2"
-                android:layout_width="@dimen/icons_tips_size"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/ic_tip_2_wrong_2"
-                app:layout_constraintStart_toStartOf="@id/ic_tip_2_wrong_2"
-                android:text="@string/text_hand_shake_virus_tip"
-                android:gravity="center" />
+    <ImageView
+        android:id="@+id/ic_tip_2_check"
+        android:layout_width="@dimen/icon_tips_checkeds_size"
+        android:layout_height="@dimen/icon_tips_checkeds_size"
+        android:src="@drawable/ic_check"
+        app:layout_constraintTop_toTopOf="@id/ic_tip_2_right"
+        app:layout_constraintStart_toEndOf="@id/ic_tip_2_right"
+        android:contentDescription="@string/ic_check_description"/>
 
-            <ImageView
-                android:id="@+id/ic_tip_2_right"
-                android:layout_width="@dimen/icons_tips_size"
-                android:layout_height="@dimen/icons_tips_size"
-                android:src="@drawable/ic_face_mask"
-                app:layout_constraintTop_toTopOf="@id/ic_tip_2_wrong_2"
-                app:layout_constraintStart_toEndOf="@id/ic_tip_2_x"
-                android:layout_marginStart="40dp"
-                android:contentDescription="@string/ic_face_mask_description"/>
+    <TextView
+        android:id="@+id/tip_2_text_right"
+        android:layout_width="@dimen/icons_tips_size"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ic_tip_2_right"
+        app:layout_constraintStart_toStartOf="@id/ic_tip_2_right"
+        android:text="@string/text_face_mask_tip"
+        android:gravity="center" />
 
-            <ImageView
-                android:id="@+id/ic_tip_2_check"
-                android:layout_width="@dimen/icon_tips_checkeds_size"
-                android:layout_height="@dimen/icon_tips_checkeds_size"
-                android:src="@drawable/ic_check"
-                app:layout_constraintTop_toTopOf="@id/ic_tip_2_right"
-                app:layout_constraintStart_toEndOf="@id/ic_tip_2_right"
-                android:contentDescription="@string/ic_check_description"/>
+    <!--Dica 3-->
 
-            <TextView
-                android:id="@+id/tip_2_text_right"
-                android:layout_width="@dimen/icons_tips_size"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/ic_tip_2_right"
-                app:layout_constraintStart_toStartOf="@id/ic_tip_2_right"
-                android:text="@string/text_face_mask_tip"
-                android:gravity="center" />
+    <ImageView
+        android:id="@+id/ic_tip_3_wrong_3"
+        android:layout_width="@dimen/icons_tips_size"
+        android:layout_height="@dimen/icons_tips_size"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_virus_spread"
+        app:layout_constraintStart_toStartOf="@+id/ic_tip_2_wrong_2"
+        app:layout_constraintTop_toBottomOf="@id/tip_2_text_wrong_2"
+        android:contentDescription="@string/ic_virus_spread_description"/>
 
-            <!--Dica 3-->
+    <ImageView
+        android:id="@+id/ic_tip_3_x"
+        android:layout_width="@dimen/icon_tips_checkeds_size"
+        android:layout_height="@dimen/icon_tips_checkeds_size"
+        android:src="@drawable/ic_wrong"
+        app:layout_constraintTop_toTopOf="@id/ic_tip_3_wrong_3"
+        app:layout_constraintStart_toEndOf="@id/ic_tip_3_wrong_3"
+        android:contentDescription="@string/ic_wrong_description"/>
 
-            <ImageView
-                android:id="@+id/ic_tip_3_wrong_3"
-                android:layout_width="@dimen/icons_tips_size"
-                android:layout_height="@dimen/icons_tips_size"
-                android:layout_marginTop="40dp"
-                android:src="@drawable/ic_virus_spread"
-                app:layout_constraintStart_toStartOf="@+id/ic_tip_2_wrong_2"
-                app:layout_constraintTop_toBottomOf="@id/tip_2_text_wrong_2"
-                android:contentDescription="@string/ic_virus_spread_description"/>
+    <TextView
+        android:id="@+id/tip_3_text_wrong_3"
+        android:layout_width="@dimen/icons_tips_size"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ic_tip_3_wrong_3"
+        app:layout_constraintStart_toStartOf="@id/ic_tip_3_wrong_3"
+        android:text="@string/text_virus_spread_tip"
+        android:gravity="center" />
 
-            <ImageView
-                android:id="@+id/ic_tip_3_x"
-                android:layout_width="@dimen/icon_tips_checkeds_size"
-                android:layout_height="@dimen/icon_tips_checkeds_size"
-                android:src="@drawable/ic_wrong"
-                app:layout_constraintTop_toTopOf="@id/ic_tip_3_wrong_3"
-                app:layout_constraintStart_toEndOf="@id/ic_tip_3_wrong_3"
-                android:contentDescription="@string/ic_wrong_description"/>
+    <ImageView
+        android:id="@+id/ic_tip_3_right"
+        android:layout_width="@dimen/icons_tips_size"
+        android:layout_height="@dimen/icons_tips_size"
+        android:src="@drawable/ic_distance"
+        app:layout_constraintTop_toTopOf="@id/ic_tip_3_wrong_3"
+        app:layout_constraintStart_toEndOf="@id/ic_tip_3_x"
+        android:layout_marginStart="40dp"
+        android:contentDescription="@string/ic_distance_description"/>
 
-            <TextView
-                android:id="@+id/tip_3_text_wrong_3"
-                android:layout_width="@dimen/icons_tips_size"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/ic_tip_3_wrong_3"
-                app:layout_constraintStart_toStartOf="@id/ic_tip_3_wrong_3"
-                android:text="@string/text_virus_spread_tip"
-                android:gravity="center" />
+    <ImageView
+        android:id="@+id/ic_tip_3_check"
+        android:layout_width="@dimen/icon_tips_checkeds_size"
+        android:layout_height="@dimen/icon_tips_checkeds_size"
+        android:src="@drawable/ic_check"
+        app:layout_constraintTop_toTopOf="@id/ic_tip_3_right"
+        app:layout_constraintStart_toEndOf="@id/ic_tip_3_right"
+        android:contentDescription="@string/ic_check_description"/>
 
-            <ImageView
-                android:id="@+id/ic_tip_3_right"
-                android:layout_width="@dimen/icons_tips_size"
-                android:layout_height="@dimen/icons_tips_size"
-                android:src="@drawable/ic_distance"
-                app:layout_constraintTop_toTopOf="@id/ic_tip_3_wrong_3"
-                app:layout_constraintStart_toEndOf="@id/ic_tip_3_x"
-                android:layout_marginStart="40dp"
-                android:contentDescription="@string/ic_distance_description"/>
+    <TextView
+        android:id="@+id/tip_3_text_right"
+        android:layout_width="@dimen/icons_tips_size"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ic_tip_3_right"
+        app:layout_constraintStart_toStartOf="@id/ic_tip_3_right"
+        android:text="@string/text_distance_tip"
+        android:gravity="center" />
 
-            <ImageView
-                android:id="@+id/ic_tip_3_check"
-                android:layout_width="@dimen/icon_tips_checkeds_size"
-                android:layout_height="@dimen/icon_tips_checkeds_size"
-                android:src="@drawable/ic_check"
-                app:layout_constraintTop_toTopOf="@id/ic_tip_3_right"
-                app:layout_constraintStart_toEndOf="@id/ic_tip_3_right"
-                android:contentDescription="@string/ic_check_description"/>
+    <!--Dica 4-->
 
-            <TextView
-                android:id="@+id/tip_3_text_right"
-                android:layout_width="@dimen/icons_tips_size"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/ic_tip_3_right"
-                app:layout_constraintStart_toStartOf="@id/ic_tip_3_right"
-                android:text="@string/text_distance_tip"
-                android:gravity="center" />
+    <ImageView
+        android:id="@+id/ic_tip_4_wrong_4"
+        android:layout_width="@dimen/icons_tips_size"
+        android:layout_height="@dimen/icons_tips_size"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_washing_hands"
+        app:layout_constraintStart_toStartOf="@+id/ic_tip_3_wrong_3"
+        app:layout_constraintTop_toBottomOf="@id/tip_3_text_wrong_3"
+        android:contentDescription="@string/ic_washing_hands_description"/>
 
-            <!--Dica 4-->
+    <ImageView
+        android:id="@+id/ic_tip_4_x"
+        android:layout_width="@dimen/icon_tips_checkeds_size"
+        android:layout_height="@dimen/icon_tips_checkeds_size"
+        android:src="@drawable/ic_check"
+        app:layout_constraintTop_toTopOf="@id/ic_tip_4_wrong_4"
+        app:layout_constraintStart_toEndOf="@id/ic_tip_4_wrong_4"
+        android:contentDescription="@string/ic_check_description"/>
 
-            <ImageView
-                android:id="@+id/ic_tip_4_wrong_4"
-                android:layout_width="@dimen/icons_tips_size"
-                android:layout_height="@dimen/icons_tips_size"
-                android:layout_marginTop="40dp"
-                android:src="@drawable/ic_washing_hands"
-                app:layout_constraintStart_toStartOf="@+id/ic_tip_3_wrong_3"
-                app:layout_constraintTop_toBottomOf="@id/tip_3_text_wrong_3"
-                android:contentDescription="@string/ic_washing_hands_description"/>
+    <TextView
+        android:id="@+id/tip_4_text_wrong_4"
+        android:layout_width="@dimen/icons_tips_size"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ic_tip_4_wrong_4"
+        app:layout_constraintStart_toStartOf="@id/ic_tip_4_wrong_4"
+        android:text="@string/text_washing_hands_tip"
+        android:gravity="center" />
 
-            <ImageView
-                android:id="@+id/ic_tip_4_x"
-                android:layout_width="@dimen/icon_tips_checkeds_size"
-                android:layout_height="@dimen/icon_tips_checkeds_size"
-                android:src="@drawable/ic_check"
-                app:layout_constraintTop_toTopOf="@id/ic_tip_4_wrong_4"
-                app:layout_constraintStart_toEndOf="@id/ic_tip_4_wrong_4"
-                android:contentDescription="@string/ic_check_description"/>
+    <ImageView
+        android:id="@+id/ic_tip_4_right"
+        android:layout_width="@dimen/icons_tips_size"
+        android:layout_height="@dimen/icons_tips_size"
+        android:src="@drawable/ic_stay_home"
+        app:layout_constraintTop_toTopOf="@id/ic_tip_4_wrong_4"
+        app:layout_constraintStart_toEndOf="@id/ic_tip_4_x"
+        android:layout_marginStart="40dp"
+        android:contentDescription="@string/ic_stay_home_description"/>
 
-            <TextView
-                android:id="@+id/tip_4_text_wrong_4"
-                android:layout_width="@dimen/icons_tips_size"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/ic_tip_4_wrong_4"
-                app:layout_constraintStart_toStartOf="@id/ic_tip_4_wrong_4"
-                android:text="@string/text_washing_hands_tip"
-                android:gravity="center" />
+    <ImageView
+        android:id="@+id/ic_tip_4_check"
+        android:layout_width="@dimen/icon_tips_checkeds_size"
+        android:layout_height="@dimen/icon_tips_checkeds_size"
+        android:src="@drawable/ic_check"
+        app:layout_constraintTop_toTopOf="@id/ic_tip_4_right"
+        app:layout_constraintStart_toEndOf="@id/ic_tip_4_right"
+        android:contentDescription="@string/ic_check_description"/>
 
-            <ImageView
-                android:id="@+id/ic_tip_4_right"
-                android:layout_width="@dimen/icons_tips_size"
-                android:layout_height="@dimen/icons_tips_size"
-                android:src="@drawable/ic_stay_home"
-                app:layout_constraintTop_toTopOf="@id/ic_tip_4_wrong_4"
-                app:layout_constraintStart_toEndOf="@id/ic_tip_4_x"
-                android:layout_marginStart="40dp"
-                android:contentDescription="@string/ic_stay_home_description"/>
-
-            <ImageView
-                android:id="@+id/ic_tip_4_check"
-                android:layout_width="@dimen/icon_tips_checkeds_size"
-                android:layout_height="@dimen/icon_tips_checkeds_size"
-                android:src="@drawable/ic_check"
-                app:layout_constraintTop_toTopOf="@id/ic_tip_4_right"
-                app:layout_constraintStart_toEndOf="@id/ic_tip_4_right"
-                android:contentDescription="@string/ic_check_description"/>
-
-            <TextView
-                android:id="@+id/tip_4_text_right"
-                android:layout_width="@dimen/icons_tips_size"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/ic_tip_4_right"
-                app:layout_constraintStart_toStartOf="@id/ic_tip_4_right"
-                android:text="@string/text_stay_home_tip"
-                android:gravity="center" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+    <TextView
+        android:id="@+id/tip_4_text_right"
+        android:layout_width="@dimen/icons_tips_size"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ic_tip_4_right"
+        app:layout_constraintStart_toStartOf="@id/ic_tip_4_right"
+        android:text="@string/text_stay_home_tip"
+        android:gravity="center" />
 </androidx.constraintlayout.widget.ConstraintLayout>
