@@ -20,7 +20,10 @@ class Repository {
     }
 
     private data class ServiceResult(
-        val infos: List<StateInfo>
+        val count: Long?,
+        val next: String?,
+        val previous: String?,
+        val infos: List<StateInfo>?
     )
 
     private interface ContactService {
