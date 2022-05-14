@@ -1,5 +1,7 @@
 package br.edu.ufabc.coronaInfo.model
 
+import com.google.gson.annotations.SerializedName
+
 /**
  * Transfer (domain) object.
  * @property count count
@@ -17,18 +19,25 @@ class StateEntity {
 
     data class City(
         val city: String?,
-        val city_ibge_code: String?,
+        @SerializedName("city_ibge_code")
+        val cityIbgeCode: String?,
         val confirmed: Long?,
-        val confirmed_per_100k_inhabitants: Double?,
+        @SerializedName("confirmed_per_100k_inhabitants")
+        val confirmedPer100kInhabitants: Double?,
         val date: String?,
-        val death_rate: Double?,
+        @SerializedName("death_rate")
+        val deathRate: Double?,
         val deaths: Long?,
-        val estimated_population: Long?,
-        val estimated_population_2019: Long?,
-        val is_last: Boolean?,
-        val order_for_place: Long?,
-        val place_type: String?,
+        @SerializedName("estimated_population")
+        val estimatedPopulation: Long?,
+        @SerializedName("estimated_population_2019")
+        val estimatedPopulation2019: Long?,
+        @SerializedName("is_last")
+        val isLast: Boolean?,
+        @SerializedName("order_for_place")
+        val orderForPlace: Long?,
+        @SerializedName("place_type")
+        val placeType: String?,
         val state: String?
     )
 }
-

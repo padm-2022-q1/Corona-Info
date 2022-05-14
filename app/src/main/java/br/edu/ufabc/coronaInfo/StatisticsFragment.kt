@@ -1,6 +1,5 @@
 package br.edu.ufabc.coronaInfo
 
-
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -12,8 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import br.edu.ufabc.coronaInfo.databinding.FragmentStatisticsBinding
 import com.google.android.material.snackbar.Snackbar
-import java.text.DecimalFormat
-
+import java.util.Locale
 
 class StatisticsFragment : Fragment() {
     private lateinit var binding: FragmentStatisticsBinding
@@ -32,21 +30,16 @@ class StatisticsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val spinner = binding.statisticsDropdownList
-        spinner?.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
-            override fun onNothingSelected(parent: AdapterView<*>?) {
+        spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
 
-            }
+            override fun onNothingSelected(parent: AdapterView<*>?) { /* Mandatory Override */ }
+
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                var text: String = spinner.getSelectedItem().toString()
+                val text: String = spinner.selectedItem.toString()
                 viewModel.getStateStatistics(text).observe(viewLifecycleOwner) { result ->
                     when (result.status) {
                         is MainViewModel.Status.Success -> {
-                            val cityList = result.result?.results
-                            binding.deathStatisticsNumber.text = cityList?.get(0)?.deaths.toString()
-                            binding.confirmedCasesStatisticsNumber.text = cityList?.get(0)?.confirmed.toString()
-                            binding.confirmedCases100kStatisticsNumber.text = String.format("%.2f", cityList?.get(0)?.confirmed_per_100k_inhabitants)
-                            binding.deathRateStatisticsNumber.text = cityList?.get(0)?.death_rate.toString()
-                            binding.populationStatisticsNumber.text = cityList?.get(0)?.estimated_population.toString()
+                            bindResultEvents(result)
                         }
                         is MainViewModel.Status.Error -> {
                             Log.e("VIEW", "Failed to call API", result.status.e)
@@ -61,6 +54,16 @@ class StatisticsFragment : Fragment() {
                 }
             }
         }
+    }
+
+    private fun bindResultEvents(result: MainViewModel.StateStatisticsResult) {
+        val cityList = result.result?.results
+        binding.deathStatisticsNumber.text = cityList?.get(0)?.deaths.toString()
+        binding.confirmedCasesStatisticsNumber.text = cityList?.get(0)?.confirmed.toString()
+        binding.confirmedCases100kStatisticsNumber.text =
+            String.format(Locale.getDefault(), "%.2f", cityList?.get(0)?.confirmedPer100kInhabitants)
+        binding.deathRateStatisticsNumber.text = cityList?.get(0)?.deathRate.toString()
+        binding.populationStatisticsNumber.text = cityList?.get(0)?.estimatedPopulation.toString()
     }
 
     private fun adapterSpinner() {
