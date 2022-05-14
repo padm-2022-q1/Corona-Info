@@ -84,6 +84,12 @@
                     android:contentDescription="@string/ic_statistics_card_view_confirmed_cases_description"
                     />
                 <TextView
+                    android:id="@+id/confirmed_cases_statistics_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/statistics_image_view_confirmed_cases"
+                    />
+                <TextView
                     android:id="@+id/statistics_card_text_confirmed_cases"
                     android:layout_alignParentBottom="true"
                     android:layout_width="wrap_content"
