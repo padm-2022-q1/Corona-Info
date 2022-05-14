@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="states_array">
-        <item>São Paulo</item>
-        <item>Rio de Janeiro</item>
-        <item>Acre</item>
-        <item>Rio Grande do Sul</item>
-        <item>Amazonas</item>
+        <item>SP</item>
+        <item>RJ</item>
+        <item>RS</item>
+        <item>AM</item>
+        <item>RN</item>
+        <item>PR</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>MT</item>
+        <item>MS</item>
+        <item>AC</item>
+        <item>AP</item>
+        <item>PA</item>
+        <item>RR</item>
+        <item>RO</item>
+        <item>TO</item>
+        <item>MA</item>
+        <item>CE</item>
+        <item>PI</item>
+        <item>PB</item>
+        <item>PE</item>
+        <item>AL</item>
+        <item>SE</item>
+        <item>BA</item>
+        <item>GO</item>
+        <item>MG</item>
+        <item>SC</item>
     </string-array>
 </resources>

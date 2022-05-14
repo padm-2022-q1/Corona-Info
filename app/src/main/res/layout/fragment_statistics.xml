@@ -41,6 +41,17 @@
                 android:src="@drawable/ic_statistics_death_numbers"
                 android:contentDescription="@string/ic_statistics_card_view_death_numbers_description"
                 />
+
+            <TextView
+                android:id="@+id/death_statistics_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/statistics_image_view_death_numbers"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
             <TextView
                 android:id="@+id/statistics_card_text_death_numbers"
                 android:layout_alignParentBottom="true"
@@ -87,7 +98,11 @@
                     android:id="@+id/confirmed_cases_statistics_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/statistics_image_view_confirmed_cases"
+                    android:layout_toEndOf="@+id/statistics_image_view_confirmed_cases"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
                     />
                 <TextView
                     android:id="@+id/statistics_card_text_confirmed_cases"
@@ -122,6 +137,17 @@
                     android:contentDescription="@string/ic_statistics_card_view_confirmed_cases_100k_description"
                     />
                 <TextView
+                    android:id="@+id/confirmed_cases_100k_statistics_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/statistics_image_view_confirmed_cases_100k"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
                     android:id="@+id/statistics_card_text_confirmed_cases_100k"
                     android:layout_alignParentBottom="true"
                     android:layout_width="wrap_content"
@@ -154,6 +180,16 @@
                     android:contentDescription="@string/ic_statistics_card_view_death_rate_description"
                     />
                 <TextView
+                    android:id="@+id/death_rate_statistics_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/statistics_image_view_death_rate"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    />
+                <TextView
                     android:id="@+id/statistics_card_text_death_rate"
                     android:layout_alignParentBottom="true"
                     android:layout_width="wrap_content"
@@ -184,6 +220,16 @@
                     android:layout_height="50dp"
                     android:src="@drawable/ic_statistics_estimated_population"
                     android:contentDescription="@string/ic_statistics_card_view_estimated_population_description"
+                    />
+                <TextView
+                    android:id="@+id/population_statistics_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/statistics_image_view_estimated_population"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
                     />
                 <TextView
                     android:id="@+id/statistics_card_text_estimated_population"
