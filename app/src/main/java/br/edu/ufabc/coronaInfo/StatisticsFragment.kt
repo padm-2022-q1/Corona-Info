@@ -31,7 +31,9 @@ class StatisticsFragment : Fragment() {
         viewModel.getStateStatistics("SP").observe(viewLifecycleOwner) { result ->
             when (result.status) {
                 is MainViewModel.Status.Success -> {
+
                     val cityList = result.result?.results
+                    Log.i("LIST", cityList.toString())
                     binding.confirmedCasesStatisticsNumber.text = cityList?.get(0)?.confirmed.toString()
                 }
                 is MainViewModel.Status.Error -> {

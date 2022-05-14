@@ -1,9 +1,12 @@
 package br.edu.ufabc.coronaInfo
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import br.edu.ufabc.coronaInfo.model.Repository
-import br.edu.ufabc.coronaInfo.model.StateInfo
+import br.edu.ufabc.coronaInfo.model.StateEntity
+import com.google.gson.Gson
+import okhttp3.ResponseBody
 
 /**
  * Main ViewModel.
@@ -33,13 +36,19 @@ class MainViewModel : ViewModel() {
      * @property status the status
      */
     data class StateStatisticsResult(
-        val result: StateInfo?,
+        val result: StateEntity.StateInfo?,
         val status: Status
     )
 
     fun getStateStatistics(state: String) = liveData {
         try {
-            emit(StateStatisticsResult(repository.getStateInfo(state), Status.Success))
+            var response = repository.getStateInfo(state)
+            var gson = Gson()
+            var states = gson.fromJson(response.string(), StateEntity.StateInfo::class.java)
+            Log.i("BODY", states.toString())
+
+            emit(StateStatisticsResult(states, Status.Success))
+
         } catch (e: Exception) {
             emit(
                 StateStatisticsResult(

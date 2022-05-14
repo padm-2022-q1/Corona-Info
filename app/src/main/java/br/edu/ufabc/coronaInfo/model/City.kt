@@ -18,16 +18,16 @@ package br.edu.ufabc.coronaInfo.model
  */
 data class City(
     val city: String?,
-    val city_ibge_code: String,
-    val confirmed: Long,
-    val confirmed_per_100k_inhabitants: Double,
-    val date: String,
-    val death_rate: Double,
-    val deaths: Long,
-    val estimated_population: Long,
-    val estimated_population_2019: Long,
-    val is_last: Boolean,
-    val order_for_place: Long,
-    val place_type: String,
-    val state: String
+    val city_ibge_code: String?,
+    val confirmed: Long?,
+    val confirmed_per_100k_inhabitants: Double?,
+    val date: String?,
+    val death_rate: Double?,
+    val deaths: Long?,
+    val estimated_population: Long?,
+    val estimated_population_2019: Long?,
+    val is_last: Boolean?,
+    val order_for_place: Long?,
+    val place_type: String?,
+    val state: String?
 )

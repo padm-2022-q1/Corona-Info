@@ -1,8 +1,10 @@
 package br.edu.ufabc.coronaInfo.model
 
 import android.util.Log
+import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import okhttp3.ResponseBody
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -22,7 +24,7 @@ class Repository {
     }
 
     private data class ServiceResult(
-        val stateResult: StateInfo
+        val stateResult: StateEntity
     )
 
     private interface StatisticsService {
@@ -32,7 +34,7 @@ class Repository {
         @GET("dataset/covid19/caso/data")
         suspend fun getStateStatistics(
             @Query("is_last") isLast: String,
-            @Query("state") state: String): Response<ServiceResult>
+            @Query("state") state: String): ResponseBody
     }
 
     private val service = Retrofit.Builder()
@@ -59,11 +61,16 @@ class Repository {
      * Retrieves all information from a State.
      * @return a list of informations
      */
-    suspend fun getStateInfo(state: String): StateInfo = withContext(Dispatchers.IO) {
+    suspend fun getStateInfo(state: String): ResponseBody = withContext(Dispatchers.IO) {
         service.getStateStatistics(isLast, state).let { response ->
-            Log.i("BODY", response.raw().toString())
-            checkResponseCodes(response)
-            response.body()?.stateResult ?: throw Exception("Failed to get body message")
+//            Log.i("BODY", response.body().toString())
+//            Log.i("BODY", response.message())
+//            Log.i("BODY", response.errorBody().toString())
+//            Log.i("BODY", response.raw().toString())
+//            Log.i("BODY", response.code().toString())
+            //checkResponseCodes(response)
+            //response.body()?.stateResult ?: throw Exception("Failed to get body message")
+            response ?: throw Exception("Failed to get body message")
         }
     }
 }
