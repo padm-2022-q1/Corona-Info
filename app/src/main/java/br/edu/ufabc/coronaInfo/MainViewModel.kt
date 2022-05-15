@@ -45,7 +45,7 @@ class MainViewModel : ViewModel() {
             val states = gson.fromJson(response.string(), StateEntity.StateInfo::class.java)
 
             emit(StateStatisticsResult(states, Status.Success))
-        } catch (e: IllegalArgumentException) {
+        } catch (e: retrofit2.HttpException) {
             emit(
                 StateStatisticsResult(
                     null,

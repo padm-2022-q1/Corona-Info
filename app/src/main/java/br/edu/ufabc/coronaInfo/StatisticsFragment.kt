@@ -43,9 +43,9 @@ class StatisticsFragment : Fragment() {
                         }
                         is MainViewModel.Status.Error -> {
                             Log.e("VIEW", "Failed to call API", result.status.e)
-                            if (view != null) {
+                            view?.let {
                                 Snackbar.make(
-                                    view.rootView, "Failed to load results",
+                                    it.rootView, "Failed to load results",
                                     Snackbar.LENGTH_LONG
                                 ).show()
                             }
