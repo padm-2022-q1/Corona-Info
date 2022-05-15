@@ -14,8 +14,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:popupBackground="#DFFFFFFF"/>
-
+        android:popupBackground="#DFFFFFFF"
+        />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/statistics_card_view_mortes"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toBottomOf="@id/statistics_dropdown_list"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         app:cardCornerRadius="10dp"
         app:strokeColor="@color/black"
         app:strokeWidth="1dp">
@@ -38,9 +38,8 @@
                 android:id="@+id/statistics_image_view_death_numbers"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_statistics_death_numbers"
                 android:contentDescription="@string/ic_statistics_card_view_death_numbers_description"
-                />
+                android:src="@drawable/ic_statistics_death_numbers" />
 
             <TextView
                 android:id="@+id/death_statistics_number"
@@ -50,7 +49,6 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="10dp"
                 android:textStyle="bold"
-                android:textSize="16sp"
                 />
             <TextView
                 android:id="@+id/statistics_card_text_death_numbers"
@@ -66,6 +64,7 @@
         app:layout_constraintTop_toBottomOf="@id/statistics_card_view_mortes"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/statistics_card_view_between_margins"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:rowCount="2"
@@ -91,9 +90,8 @@
                     android:id="@+id/statistics_image_view_confirmed_cases"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/ic_statistics_confirmed_cases"
                     android:contentDescription="@string/ic_statistics_card_view_confirmed_cases_description"
-                    />
+                    android:src="@drawable/ic_statistics_confirmed_cases" />
                 <TextView
                     android:id="@+id/confirmed_cases_statistics_number"
                     android:layout_width="wrap_content"
@@ -102,7 +100,6 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginStart="10dp"
                     android:textStyle="bold"
-                    android:textSize="16sp"
                     />
                 <TextView
                     android:id="@+id/statistics_card_text_confirmed_cases"
@@ -133,9 +130,8 @@
                     android:id="@+id/statistics_image_view_confirmed_cases_100k"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/ic_statistics_confirmed_cases_100k"
                     android:contentDescription="@string/ic_statistics_card_view_confirmed_cases_100k_description"
-                    />
+                    android:src="@drawable/ic_statistics_confirmed_cases_100k" />
                 <TextView
                     android:id="@+id/confirmed_cases_100k_statistics_number"
                     android:layout_width="wrap_content"
@@ -144,7 +140,6 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginStart="10dp"
                     android:textStyle="bold"
-                    android:textSize="16sp"
                     />
 
                 <TextView
@@ -176,9 +171,8 @@
                     android:id="@+id/statistics_image_view_death_rate"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/ic_statistics_death_rate"
                     android:contentDescription="@string/ic_statistics_card_view_death_rate_description"
-                    />
+                    android:src="@drawable/ic_statistics_death_rate" />
                 <TextView
                     android:id="@+id/death_rate_statistics_number"
                     android:layout_width="wrap_content"
@@ -187,7 +181,6 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginStart="10dp"
                     android:textStyle="bold"
-                    android:textSize="16sp"
                     />
                 <TextView
                     android:id="@+id/statistics_card_text_death_rate"
@@ -218,9 +211,8 @@
                     android:id="@+id/statistics_image_view_estimated_population"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/ic_statistics_estimated_population"
                     android:contentDescription="@string/ic_statistics_card_view_estimated_population_description"
-                    />
+                    android:src="@drawable/ic_statistics_estimated_population" />
                 <TextView
                     android:id="@+id/population_statistics_number"
                     android:layout_width="wrap_content"
@@ -229,7 +221,6 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginStart="10dp"
                     android:textStyle="bold"
-                    android:textSize="15sp"
                     />
                 <TextView
                     android:id="@+id/statistics_card_text_estimated_population"
