@@ -45,7 +45,7 @@ class StatisticsFragment : Fragment() {
                             Log.e("VIEW", "Failed to call API", result.status.e)
                             if (view != null) {
                                 Snackbar.make(
-                                    view.rootView, "Failed to fetch item",
+                                    view.rootView, "Failed to load results",
                                     Snackbar.LENGTH_LONG
                                 ).show()
                             }
@@ -57,13 +57,13 @@ class StatisticsFragment : Fragment() {
     }
 
     private fun bindResultEvents(result: MainViewModel.StateStatisticsResult) {
-        val cityList = result.result?.results
-        binding.deathStatisticsNumber.text = cityList?.get(0)?.deaths.toString()
-        binding.confirmedCasesStatisticsNumber.text = cityList?.get(0)?.confirmed.toString()
+        val cityList = result.result?.results?.get(0)
+        binding.deathStatisticsNumber.text = cityList?.deaths.toString()
+        binding.confirmedCasesStatisticsNumber.text = cityList?.confirmed.toString()
         binding.confirmedCases100kStatisticsNumber.text =
-            String.format(Locale.getDefault(), "%.2f", cityList?.get(0)?.confirmedPer100kInhabitants)
-        binding.deathRateStatisticsNumber.text = cityList?.get(0)?.deathRate.toString()
-        binding.populationStatisticsNumber.text = cityList?.get(0)?.estimatedPopulation.toString()
+            String.format(Locale.getDefault(), "%.2f", cityList?.confirmedPer100kInhabitants)
+        binding.deathRateStatisticsNumber.text = cityList?.deathRate.toString()
+        binding.populationStatisticsNumber.text = cityList?.estimatedPopulation.toString()
     }
 
     private fun adapterSpinner() {
