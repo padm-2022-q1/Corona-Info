@@ -7,7 +7,6 @@
     android:padding="10dp"
     tools:context=".StatisticsFragment">
 
-
     <androidx.appcompat.widget.AppCompatSpinner
         android:id="@+id/statistics_dropdown_list"
         android:layout_width="match_parent"

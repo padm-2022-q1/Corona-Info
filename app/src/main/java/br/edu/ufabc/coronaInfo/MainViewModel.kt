@@ -1,5 +1,6 @@
 package br.edu.ufabc.coronaInfo
 
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import br.edu.ufabc.coronaInfo.model.Repository
@@ -11,6 +12,11 @@ import com.google.gson.Gson
  */
 class MainViewModel : ViewModel() {
     private val repository = Repository()
+
+    /**
+     * LiveData to signal an ongoing data loading operation.
+     */
+    val isLoading = MutableLiveData(false)
 
     /**
      * Class to signal ViewModel status.

@@ -24,6 +24,7 @@ class StatisticsFragment : Fragment() {
     ): View {
         binding = FragmentStatisticsBinding.inflate(inflater, container, false)
         adapterSpinner()
+        viewModel.isLoading.value = true
         return binding.root
     }
 
@@ -35,13 +36,16 @@ class StatisticsFragment : Fragment() {
             override fun onNothingSelected(parent: AdapterView<*>?) { /* Mandatory Override */ }
 
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                viewModel.isLoading.value = true
                 val text: String = spinner.selectedItem.toString()
                 viewModel.getStateStatistics(text).observe(viewLifecycleOwner) { result ->
                     when (result.status) {
                         is MainViewModel.Status.Success -> {
                             bindResultEvents(result)
+                            viewModel.isLoading.value = false
                         }
                         is MainViewModel.Status.Error -> {
+                            viewModel.isLoading.value = false
                             Log.e("VIEW", "Failed to call API", result.status.e)
                             view?.let {
                                 Snackbar.make(
