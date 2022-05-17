@@ -19,10 +19,6 @@ class Repository {
         private const val isLast = "True"
     }
 
-//    private data class ServiceResult(
-//        val stateResult: StateEntity
-//    )
-
     private interface StatisticsService {
         @Headers(
             "Authorization: $token"
@@ -40,23 +36,9 @@ class Repository {
         .build()
         .create(StatisticsService::class.java)
 
-//    private fun deserializeErrorResult(response: Response<ServiceResult>) =
-//        Gson().fromJson<ServiceResult>(
-//            response.errorBody()?.charStream()?.readText(),
-//            object : TypeToken<ServiceResult>() {}.type
-//        )
-
-//    private fun checkResponseCodes(response: Response<ServiceResult>) = when (response.code()) {
-//        200 -> {}
-//        401 -> throw Exception("User id is not authorized")
-//        500 -> throw Exception("Internal server error")
-//        406 -> throw Exception("Invalid input data format")
-//        else -> throw Exception("Invalid response code")
-//    }
-
     /**
      * Retrieves all information from a State.
-     * @return a list of informations
+     * @return a response body
      */
     suspend fun getStateInfo(state: String): ResponseBody = withContext(Dispatchers.IO) {
         service.getStateStatistics(isLast, state).let { response ->

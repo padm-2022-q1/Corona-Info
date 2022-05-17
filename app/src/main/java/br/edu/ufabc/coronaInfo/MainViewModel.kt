@@ -36,7 +36,7 @@ class MainViewModel : ViewModel() {
 
     /**
      * A result that holds a contact list.
-     * @property result the result, it any
+     * @property result the result, is StateEntity.StateInfo
      * @property status the status
      */
     data class StateStatisticsResult(
